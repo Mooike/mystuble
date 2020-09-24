@@ -1,0 +1,7 @@
+{
+  "name": "stuble",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
