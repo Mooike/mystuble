@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="add()">
+        <ion-icon slot="start" name="add" size = "large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input [(ngModel)] = "item.beschreibung" type="text" placeholder="Hier eintragen..." color = "primary" style="font-size: large;"></ion-input>
+</ion-content>

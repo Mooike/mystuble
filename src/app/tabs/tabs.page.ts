@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { LoginModalPage } from '../login-modal/login-modal.page';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private modalController: ModalController) {
+    this.modalController.create({
+      component: LoginModalPage
+    }).then(modal => modal.present())
+  }
 
 }

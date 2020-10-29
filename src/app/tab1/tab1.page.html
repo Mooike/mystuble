@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+  <ion-toolbar style="text-align: center;">
+    <ion-title color = "primary">
+      Trinksprüche
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" >
+  <div class = "beer">
+  
+    
+      <ion-label *ngIf = "that != null"style="padding-bottom: 40px;">{{this.that.spruch}}</ion-label>
+      <ion-button (click)="getRandom()" color ="primary" fill = "clear" style="height: fit-content; border-radius: 100px;">
+        <ion-icon name="beer-outline"color = "primary" style="font-size: 80px;"></ion-icon>
+      </ion-button>
+  </div>
+    
+    
 </ion-content>
